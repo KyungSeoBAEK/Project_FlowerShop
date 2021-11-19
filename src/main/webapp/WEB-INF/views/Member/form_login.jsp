@@ -7,6 +7,6 @@
 <title>로그인</title>
 </head>
 <body>
-
+	<h1>hi</h1>
 </body>
 </html>

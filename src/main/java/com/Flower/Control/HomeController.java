@@ -22,28 +22,23 @@ public class HomeController {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/")
-	public String home() {
-		
-		return "home";
-	}
 	
 	@RequestMapping(value = "/form_login")
 	public String form_login() {
 		
-		return "form_login";
+		return "Member/form_login";
 	}
 	
 	@RequestMapping(value = "/loginOk")
 	public String loginOk() {
 		
-		return "loginOk";
+		return "/loginOk";
 	}
 	
 	@RequestMapping(value = "/logout")
 	public String logout() {
 		
-		return "logout";
+		return "redirect:main";
 	}
 	
 	@RequestMapping(value = "/form_join")
@@ -51,17 +46,108 @@ public class HomeController {
 		
 		return "form_join";
 	}
-	
+	//내 정보 보기(내 정보 삭제)  -- > 정보 수정
 	@RequestMapping(value = "/list_info")
 	public String list_info() {
 		
 		return "list_info";
 	}
-	
+	// 내 정보가 수정되는 페이지
+	@RequestMapping(value = "/modify_form_info")
+	public String modify_form_info() {
+		
+		return "modify_form_info";
+	}
+	// 정보 수정된거 내 정보에서 보기
 	@RequestMapping(value = "/modify_info")
 	public String modify_info() {
 		
-		return "modify_info";
+		return "redirect:list_info";
 	}
+	
+	//siyeon part. end
+	
+	//장바구니 페이지
+	@RequestMapping(value = "/list_cart")
+	public String list_cart() {
+		
+		return "list_cart";
+	}
+	// 상품 --> 장바구니
+	@RequestMapping(value = "/add_cart")
+	public String add_cart() {
+		
+		return "add_cart";
+	}
+	//전체 섹션 삭제
+	@RequestMapping(value = "/delete_cart")
+	public String delete_cart() {
+		
+		return "redirect:cart";
+	}
+	//개별 세션 삭제
+	@RequestMapping(value = "/remove_cart")
+	public String remove_cart() {
+		
+		return "redirect:cart";
+	}
+	//내 정보에서 보는 결제목록
+	@RequestMapping(value = "/list_payment")
+	public String list_payment() {
+		
+		return "list_payment";
+	}
+	//결제화면에서 main으로
+	@RequestMapping(value = "/payment")
+	public String payment() {
+		
+		return "redirect:main";
+	}
+	//주문 목록
+	@RequestMapping(value = "/list_order")
+	public String list_order() {
+		
+		return "list_order";
+	}
+	//주문 취소
+	@RequestMapping(value = "/delete_order")
+	public String delete_order() {
+		
+		return "redirect:list_order";
+	}
+	
+	// Yongju part. end
+	
+	//메인 화면
+	@RequestMapping(value = "/")
+	public String index() {
+		
+		return "index";
+	}
+	//상품목록(꽃,식물)
+	@RequestMapping(value = "/list_product_flower")
+	public String list_product_flower() {
+		
+		return "list_product_flower";
+	}
+	//상품목록(화분)
+	@RequestMapping(value = "/list_product_port")
+	public String list_product_port() {
+		
+		return "list_product_port";
+	}
+	//상품목록(선물)
+	@RequestMapping(value = "/list_product_gift")
+	public String list_product_gift() {
+		
+		return "list_product_gift";
+	}
+	//상품상세보기
+	@RequestMapping(value = "/list_details")
+	public String list_details() {
+		
+		return "list_details";
+	}
+	
 	
 }
