@@ -71,25 +71,25 @@ public class HomeController {
 	@RequestMapping(value = "/list_cart")
 	public String list_cart() {
 		
-		return "list_cart";
+		return "Cart/list_cart";
 	}
 	// 상품 --> 장바구니
 	@RequestMapping(value = "/add_cart")
 	public String add_cart() {
 		
-		return "add_cart";
+		return "Cart/add_cart";
 	}
 	//전체 섹션 삭제
 	@RequestMapping(value = "/delete_cart")
 	public String delete_cart() {
 		
-		return "redirect:cart";
+		return "redirectl:list_cart";
 	}
 	//개별 세션 삭제
 	@RequestMapping(value = "/remove_cart")
 	public String remove_cart() {
 		
-		return "redirect:cart";
+		return "redirect:list_cart";
 	}
 	//내 정보에서 보는 결제목록
 	@RequestMapping(value = "/list_payment")
@@ -107,7 +107,7 @@ public class HomeController {
 	@RequestMapping(value = "/list_order")
 	public String list_order() {
 		
-		return "list_order";
+		return "Cart/list_order";
 	}
 	//주문 취소
 	@RequestMapping(value = "/delete_order")
@@ -122,6 +122,11 @@ public class HomeController {
 	@RequestMapping(value = "/")
 	public String index() {
 		
+		return "index";
+	}
+	
+	@RequestMapping(value="/index")
+	public String index1() {
 		return "index";
 	}
 	//상품목록(꽃,식물)
