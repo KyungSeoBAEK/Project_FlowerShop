@@ -1,0 +1,46 @@
+@charset "EUC-KR";
+
+.left_div {
+	width: 35%;
+	height: 100%;
+	background-color: #F3F3F3;
+	float: left;
+}
+
+.rigth_div {
+	width: 20%;
+	height: 100%;
+	background-color: #F3F3F3;
+	float: left;
+}
+
+.main_div {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 5px;
+	background-color: #F3F3F3;
+}
+
+.side_div {
+	width: 20%;
+	height: 100%;
+	background-color: #F3F3F3;
+	float: left;
+}
+
+.side_div2 {
+	width: 15%;
+	height: 100%;
+	background-color: #F3F3F3;
+	float: left;
+}
+
+.side_left_box {
+	width: 90%;
+	height: 30%;
+	background-color: #ffffff;
+	margin: 5px;
+	padding: 5px;
+	float: left;
+}

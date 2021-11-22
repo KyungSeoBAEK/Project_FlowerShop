@@ -95,7 +95,7 @@ public class HomeController {
 	@RequestMapping(value = "/list_payment")
 	public String list_payment() {
 		
-		return "list_payment";
+		return "Cart/list_payment";
 	}
 	//결제화면에서 main으로
 	@RequestMapping(value = "/payment")
