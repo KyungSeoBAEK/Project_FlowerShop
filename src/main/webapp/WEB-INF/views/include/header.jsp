@@ -5,10 +5,11 @@
 <title>Flower Shop Portfolio</title>
 
 <!-- Site CSS -->
-<link rel="stylesheet"  type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/resources/css/style.css">
 <!-- bootstrap  -->
 <link rel="stylesheet" type="text/css"
-	href="/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	href="${pageContext.request.contextPath}/resources/bootstrap-3.3.6-dist/css/bootstrap.min.css">
 </head>
 <body data-spy="scroll" data-target="#navbarResponsive">
 	<div id="#sticker" class="header-area">
@@ -27,8 +28,9 @@
 						</div>
 						<div class="inline-col-group" style="width: 20%;">
 							<div class="inline-col">
-								<a href="index.html"> <span class="sr-only">사이트 로고</span> <img
-									src="/img/logo.png" alt="Anthologia" width="200"
+								<a href="index"> <span class="sr-only">사이트 로고</span> <img
+									src="${pageContext.request.contextPath}/resources/img/logo.png"
+									alt="Anthologia" width="200"
 									style="max-width: 100%; height: auto; image-rendering: -webkit-optimize-contrast;">
 								</a>
 							</div>
@@ -50,12 +52,9 @@
 									</div>
 								</div>
 								<div class="inline-blocked">
-									<a href="/shop cart"> <span class="inline-blocked padding">Bag</span>
-
+									<a href="list_cart"> <span class="inline-blocked padding">Bag</span>
 									</a>
-									<!-- 장바구니 넣는곳 (경로 잘 넣어야함) -->
 								</div>
-
 							</div>
 						</div>
 					</nav>
@@ -63,10 +62,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container" style="height: 800px; background-color: red;"></div>
-	<div class="container" style="height: 800px; background-color: blue;"></div>
-	<div style="height: 300px; background-color: gray; opacity: 0.6">
-		<h1 style="text-align: center; margin-top: 0px;">footer 넣을곳</h1>
-	</div>
+
+
 </body>
 </html>
